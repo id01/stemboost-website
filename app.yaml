@@ -2,6 +2,9 @@ runtime: php55
 api_version: 1
 
 handlers:
+- url: _\.php
+  script: _.php
+
 - url: /bootstrap
   static_dir: bootstrap
 
@@ -15,6 +18,3 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
-
-- url: /phpinfo\.php
-  script: phpinfo.php
