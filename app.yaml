@@ -2,7 +2,7 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: _\.php
+- url: /
   script: _.php
 
 - url: /bootstrap
