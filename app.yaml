@@ -1,0 +1,20 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /images
+  static_dir: images
+
+- url: /index\.html
+  static_files: index.html
+  upload: index\.html
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /phpinfo\.php
+  script: phpinfo.php
